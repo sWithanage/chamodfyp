@@ -51,48 +51,48 @@ function Footer({ company, links }) {
       alignItems="center"
       px={1.5}
     >
-      <ArgonBox
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        flexWrap="wrap"
-        color="text"
-        fontSize={size.sm}
-        px={1.5}
-      >
-        &copy; {new Date().getFullYear()}, made with
-        <ArgonBox fontSize={size.md} color="text" mb={-0.5} mx={0.25}>
-          <Icon color="inherit" fontSize="inherit">
-            favorite
-          </Icon>
-        </ArgonBox>
-        by
-        <Link href={href} target="_blank">
-          <ArgonTypography variant="button" fontWeight="medium">
-            &nbsp;{name}&nbsp;
-          </ArgonTypography>
-        </Link>
-        for a better web.
-      </ArgonBox>
-      <ArgonBox
-        component="ul"
-        sx={({ breakpoints }) => ({
-          display: "flex",
-          flexWrap: "wrap",
-          alignItems: "center",
-          justifyContent: "center",
-          listStyle: "none",
-          mt: 3,
-          mb: 0,
-          p: 0,
+      {/*<ArgonBox*/}
+      {/*  display="flex"*/}
+      {/*  justifyContent="center"*/}
+      {/*  alignItems="center"*/}
+      {/*  flexWrap="wrap"*/}
+      {/*  color="text"*/}
+      {/*  fontSize={size.sm}*/}
+      {/*  px={1.5}*/}
+      {/*>*/}
+      {/*  &copy; {new Date().getFullYear()}, made with*/}
+      {/*  <ArgonBox fontSize={size.md} color="text" mb={-0.5} mx={0.25}>*/}
+      {/*    <Icon color="inherit" fontSize="inherit">*/}
+      {/*      favorite*/}
+      {/*    </Icon>*/}
+      {/*  </ArgonBox>*/}
+      {/*  by*/}
+      {/*  <Link href={href} target="_blank">*/}
+      {/*    <ArgonTypography variant="button" fontWeight="medium">*/}
+      {/*      &nbsp;{name}&nbsp;*/}
+      {/*    </ArgonTypography>*/}
+      {/*  </Link>*/}
+      {/*  for a better web.*/}
+      {/*</ArgonBox>*/}
+      {/*<ArgonBox*/}
+      {/*  component="ul"*/}
+      {/*  sx={({ breakpoints }) => ({*/}
+      {/*    display: "flex",*/}
+      {/*    flexWrap: "wrap",*/}
+      {/*    alignItems: "center",*/}
+      {/*    justifyContent: "center",*/}
+      {/*    listStyle: "none",*/}
+      {/*    mt: 3,*/}
+      {/*    mb: 0,*/}
+      {/*    p: 0,*/}
 
-          [breakpoints.up("lg")]: {
-            mt: 0,
-          },
-        })}
-      >
-        {renderLinks()}
-      </ArgonBox>
+      {/*    [breakpoints.up("lg")]: {*/}
+      {/*      mt: 0,*/}
+      {/*    },*/}
+      {/*  })}*/}
+      {/*>*/}
+      {/*  {renderLinks()}*/}
+      {/*</ArgonBox>*/}
     </ArgonBox>
   );
 }

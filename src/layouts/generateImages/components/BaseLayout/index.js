@@ -47,7 +47,7 @@ function BaseLayout({ stickyNavbar, children }) {
         : setTabsOrientation("horizontal");
     }
 
-    /** 
+    /**
      The event listener that's calling the handleTabsOrientation function when resizing the window.
     */
     window.addEventListener("resize", handleTabsOrientation);
@@ -66,16 +66,16 @@ function BaseLayout({ stickyNavbar, children }) {
       <DashboardNavbar absolute={!stickyNavbar} isMini />
       <ArgonBox mt={stickyNavbar ? 3 : 10}>
         <Grid container>
-          <Grid item xs={12} sm={8} lg={4}>
-            <AppBar position="static">
-              <Tabs orientation={tabsOrientation} value={tabValue} onChange={handleSetTabValue}>
-                <Tab label="Messages" />
-                <Tab label="Social" />
-                <Tab label="Notifications" />
-                <Tab label="Backup" />
-              </Tabs>
-            </AppBar>
-          </Grid>
+          {/*<Grid item xs={12} sm={8} lg={4}>*/}
+          {/*  <AppBar position="static">*/}
+          {/*    <Tabs orientation={tabsOrientation} value={tabValue} onChange={handleSetTabValue}>*/}
+          {/*      <Tab label="Messages" />*/}
+          {/*      <Tab label="Social" />*/}
+          {/*      <Tab label="Notifications" />*/}
+          {/*      <Tab label="Backup" />*/}
+          {/*    </Tabs>*/}
+          {/*  </AppBar>*/}
+          {/*</Grid>*/}
         </Grid>
         {children}
       </ArgonBox>

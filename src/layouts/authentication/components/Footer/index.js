@@ -84,11 +84,11 @@ function Footer() {
             </ArgonBox>
           </ArgonBox>
         </Grid>
-        <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
-          <ArgonTypography variant="body2" color="secondary">
-            Copyright &copy; 2022 Argon by Creative Tim.
-          </ArgonTypography>
-        </Grid>
+        {/*<Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>*/}
+        {/*  <ArgonTypography variant="body2" color="secondary">*/}
+        {/*    Copyright &copy; 2022 Argon by Creative Tim.*/}
+        {/*  </ArgonTypography>*/}
+        {/*</Grid>*/}
       </Grid>
     </ArgonBox>
   );

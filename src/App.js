@@ -110,7 +110,7 @@ export default function App() {
       }
 
       if (route.route) {
-        return <Route exact path={route.route} element={route.component} key={route.key} />;
+        return <Route exact path={route.path} element={route.component} key={route.key} />;
       }
 
       return null;

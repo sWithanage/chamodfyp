@@ -24,7 +24,7 @@ import ArgonTypography from "components/ArgonTypography";
 // import ArgonButton from "components/ArgonButton";
 
 // Billing page components
-import Transaction from "layouts/billing/components/Transaction";
+import Transaction from "../../components/Transaction";
 
 function Transactions() {
   return (
