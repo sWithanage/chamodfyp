@@ -104,7 +104,7 @@ export default function App() {
   }, [pathname]);
 
   const getRoutes = (allRoutes) =>
-    allRoutes?.filter(value=> value?.navbar).map((route) => {
+    allRoutes.map((route) => {
       if (route.collapse) {
         return getRoutes(route.collapse);
       }
