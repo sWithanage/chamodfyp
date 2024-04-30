@@ -57,7 +57,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
       setMiniSidenav(dispatch, window.innerWidth < 1200);
     }
 
-    /** 
+    /**
      The event listener that's calling the handleMiniSidenav function when resizing the window.
     */
     window.addEventListener("resize", handleMiniSidenav);
@@ -77,12 +77,12 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
       if (href) {
         returnValue = (
           <Link href={href} key={key} target="_blank" rel="noreferrer">
-            <SidenavItem
-              name={name}
-              icon={icon}
-              active={key === itemName}
-              noCollapse={noCollapse}
-            />
+            {/*<SidenavItem*/}
+            {/*  name={name}*/}
+            {/*  icon={icon}*/}
+            {/*  active={key === itemName}*/}
+            {/*  noCollapse={noCollapse}*/}
+            {/*/>*/}
           </Link>
         );
       } else {
