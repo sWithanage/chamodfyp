@@ -104,7 +104,7 @@ export default function App() {
   }, [pathname]);
 
   const getRoutes = (allRoutes) =>
-    allRoutes.map((route) => {
+    allRoutes?.filter(value=> value?.navbar).map((route) => {
       if (route.collapse) {
         return getRoutes(route.collapse);
       }
@@ -150,7 +150,7 @@ export default function App() {
               color={sidenavColor}
               brand={darkSidenav || darkMode ? brand : brandDark}
               brandName="Argon Dashboard 2 PRO"
-              routes={routes}
+              routes={routes?.filter(value=> value?.navbar)}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
             />

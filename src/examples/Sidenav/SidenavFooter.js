@@ -33,7 +33,7 @@ function SidenavFooter() {
 
   return (
     <ArgonBox opacity={miniSidenav ? 0 : 1} sx={{ transition: "opacity 200ms linear" }}>
-      <ArgonBox position="relative" textAlign="center">
+      {/* <ArgonBox position="relative" textAlign="center">
         <ArgonBox component="img" src={icon} alt="sidebar_illustration" width="60%" />
         <ArgonBox
           width="100%"
@@ -76,7 +76,7 @@ function SidenavFooter() {
         >
           Upgrade to PRO
         </ArgonButton>
-      </ArgonBox>
+      </ArgonBox> */}
     </ArgonBox>
   );
 }

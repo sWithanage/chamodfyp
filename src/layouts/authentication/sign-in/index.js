@@ -28,7 +28,7 @@ function Illustration() {
     const { username, password } = credentials;
     // Replace these credentials with those from your environment or settings
     if (username === "admin" && password === "admin") {
-      navigate("/dashboard");
+      navigate("/generateImages/StyleGan");
     } else {
       alert("Invalid username or password");
     }

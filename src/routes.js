@@ -35,6 +35,8 @@ Coded by www.creative-tim.com
 
 import GenerateImages from "layouts/generateImages";
 import ArgonBox from "components/ArgonBox";
+import SignIn from "layouts/authentication/sign-in";
+import SignUp from "layouts/authentication/sign-up";
 
 const routes = [
   {
@@ -43,6 +45,7 @@ const routes = [
     key: "styleGan",
     route: "/generateImages/StyleGan",
     path: "/generateImages/:ganType",
+    navbar: true,
     icon: <ArgonBox component="i" color="info" fontSize="14px" className="ni ni-app" />,
     component: <GenerateImages />,
   },
@@ -52,9 +55,32 @@ const routes = [
     key: "generateImages",
     route: "/generateImages/DcGan",
     path: "/generateImages/:ganType",
+    navbar: true,
     icon: <ArgonBox component="i" color="info" fontSize="14px" className="ni ni-app" />,
     component: <GenerateImages />,
-  }
+  },
+  {
+    type: "route",
+    name: "Sign In",
+    key: "sign-in",
+    route: "/authentication/sign-in",
+    path: "/login",
+    navbar: false,
+    icon: (
+      <ArgonBox component="i" color="warning" fontSize="14px" className="ni ni-single-copy-04" />
+    ),
+    component: <SignIn />,
+  },
+  {
+    type: "route",
+    name: "Sign Up",
+    key: "sign-up",
+    route: "/authentication/sign-up",
+    path: "/signup",
+    navbar: false,
+    icon: <ArgonBox component="i" color="info" fontSize="14px" className="ni ni-collection" />,
+    component: <SignUp />,
+  },
 ];
 
 export default routes;

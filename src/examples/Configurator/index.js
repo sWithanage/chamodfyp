@@ -73,7 +73,7 @@ function Configurator() {
         px={3}
       >
         <ArgonBox>
-          <ArgonTypography variant="h5">Argon Configurator</ArgonTypography>
+          <ArgonTypography variant="h5">Settings</ArgonTypography>
           <ArgonTypography variant="body2" color="text">
             See our dashboard options.
           </ArgonTypography>
@@ -187,7 +187,7 @@ function Configurator() {
           <Switch checked={darkMode} onChange={handleDarkMode} />
         </ArgonBox>
 
-        <ArgonBox mt={5} mb={2}>
+        {/* <ArgonBox mt={5} mb={2}>
           <ArgonBox mb={2}>
             <ArgonButton
               component={Link}
@@ -223,8 +223,8 @@ function Configurator() {
           >
             View Documentation
           </ArgonButton>
-        </ArgonBox>
-        <ArgonBox display="flex" justifyContent="center">
+        </ArgonBox> */}
+        {/* <ArgonBox display="flex" justifyContent="center">
           <GitHubButton
             href="https://github.com/creativetimofficial/argon-dashboard-material-ui"
             data-icon="octicon-star"
@@ -234,8 +234,8 @@ function Configurator() {
           >
             Star
           </GitHubButton>
-        </ArgonBox>
-        <ArgonBox mt={3} textAlign="center">
+        </ArgonBox> */}
+        {/* <ArgonBox mt={3} textAlign="center">
           <ArgonBox mb={0.5}>
             <ArgonTypography variant="h6">Thank you for sharing!</ArgonTypography>
           </ArgonBox>
@@ -264,7 +264,7 @@ function Configurator() {
               &nbsp; Share
             </ArgonButton>
           </ArgonBox>
-        </ArgonBox>
+        </ArgonBox> */}
       </ArgonBox>
     </ConfiguratorRoot>
   );
